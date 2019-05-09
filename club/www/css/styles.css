@@ -5,6 +5,7 @@ body
 	background-image: url(../img/wood-texture-013.jpg);
 	position: relative;
 }
+
 *{
 	
 	margin: 0;
@@ -100,8 +101,8 @@ a{
 }
 
 .menu-link{
-	text-transform: uppercase;﻿
-	display:flex;
+	text-transform: uppercase;
+	display: flex;
     justify-content: space-around;
     list-style: none;
     color:#000;
@@ -225,11 +226,12 @@ nav a {
 	text-align: left;
 	text-shadow: 1px 1px #000, 1px -1px #000, -1px 1px #732372, -1px -1px #000, 3px 3px 6px #000;
 }
-.button{
-	margin-top: 45px;
+.btn{
+	margin-top: 20px;
 	display: inline-flex;
 	justify-content: center;
 	align-items:center;
+	text-transform: uppercase;
 	color: #FFFFFF;
 	box-shadow: 20px 0 20px -20px #fff inset, -20px 0 20px -20px #fff inset;
 	border-radius: 100px;
@@ -239,13 +241,14 @@ nav a {
     height: 60px;
 	text-align: center;
 }
-.button:hover
+.btn:hover
 {
 	background: #A0522D;
 }
 .discription{
 	display: flex;
-	justify-content: row;
+	flex-direction: row;
+
 }
 .middle-block h2{
 	margin-top: 20px;
@@ -276,9 +279,102 @@ nav a {
 }
 .s-call{
 	display:flex;
-	justify-content:row;
+	flex-direction:row;
+
 }
 .row{
+
 	display:flex;
-	justify-content:row;
+	flex-direction:row;
+	justify-content: space-between;
+
+
+}
+.row a
+{
+
+	font-size:14px;
+	margin-right: 45px;
+	padding: 18px 4px;
+}
+.row a:hover
+{
+	background: #A0522D;
+}
+.column{
+
+
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+form{
+
+	margin-left: 50px;
+	width:590px;
+	height: 560px;
+	/*margin:0 auto;*/
+	max-width:95%;
+	box-sizing:border-box;
+	padding:40px;
+	border-radius:5px;
+	background:#FFEBCD;
+	-webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);
+	box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);
+
+}
+.textbox{
+	height:50px;
+	width:100%;
+	border-radius:3px;
+	border:rgba(0,0,0,.3) 2px solid;
+	box-sizing:border-box;
+	font-family: 'Open Sans', sans-serif;
+	font-size:18px;
+	padding:10px;
+	margin-bottom:30px;
+	background:#FFEBCD;
+}
+.form1{
+
+	background-color: #FFEBCD;
+}
+.div1{
+	flex-grow: 1;
+}
+.div2{
+	flex-grow: 2;
+
+}
+.formhead{
+	text-align: center;
+	font-weight: bold;
+	font-size: 45px;
+	line-height: 55px;
+	font-family: "Georgia", serif;
+	color: #a38b70;
+}
+.callback{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+
+}
+.callback p{
+	margin-top: 20px;
+	text-align: center;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+
+}
+.feedback {
+	padding-top: 60px;
+	padding-bottom: 70px;
+}
+
+.feedback .container {
+	position: relative;
 }

@@ -3,9 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/selectize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-	
+	<script type="text/javascript" src="js/common.js"></script>
+
 
 </head>
 <body>
@@ -33,11 +38,11 @@
 							<li><a href=""><strong>Подарочный сертификат</strong></a></li>
 						</ul>
 					</li>
-					<li><a href="#"  class="down menu-link""><strong>Фото</strong></a>
+					<li><a href="#"  class="down menu-link"><strong>Фото</strong></a>
 						<ul  class="submenu">
 							<li><a href=""><strong>Названия альбомов</strong></a></li>
 						</ul></li>
-					<li><a href="#"  class="down menu-link""><strong>О клубе</strong></a>
+					<li><a href="#"  class="down menu-link"><strong>О клубе</strong></a>
 						<ul class="submenu">
 							<li><a href=""><strong>Наши лошади</strong></a></li>
 							<li><a href=""><strong>График работы</strong></a></li>
@@ -94,33 +99,53 @@
 			    </div>
 			</div>
 			</div>
-			<section class="s-call inverse" style="background-image:url(img/1-1-2.jpg);">
+
+
+		<section class="feedback">
 				<div class="row">
-					<div class="col-sm-6 col-sm-offset-6">
+
+
+					<div class="col div2">
 
 						<form class="callback">
-							<div class="success">
-								<span>Спасибо за заявку!</span>
-							</div>
+							<!--<div class="success">-->
+								<!--<span>Спасибо за заявку!</span>-->
+							<!--</div>-->
 
 							<div class="formhead">
 								Оставить заявку
 							</div>
 							<p>Оставьте заявку и мы вам перезвоним в течение 15 минут.</p>
+							<div class="column">
 
-							<input type="text" name="Имя" placeholder="Ваше имя...">
-							<input type="text" name="Имя" placeholder="Ваше имя...">
-							<input type="text" name="Имя" placeholder="Ваше имя...">
 
+
+							<input type="text" name="Имя" class="textbox" placeholder="Ваше имя...">
+							<input type="text" name="Телефон" class="textbox" placeholder="Ваш телефон...">
+							<div class="select">
+								<select name="Услуга" class="textbox">
+								<option value="1" class="type">Вид услуги...</option>
+								<option value="2">Конная прогулка</option>
+								<option value="2">Проект "Романтика"</option>
+								<option value="2">Конная прогулка "Вечерняя"</option>
+								<option value="2">Проект "Семейная лошадка"</option>
+								<option value="2">Экскурсия с катанием на лошадях</option>
+								<option value="2">Фотосессиии с лошадьми</option>
+								<option value="2">Подарочный сертификат</option>
+
+							</select>
+							</div>
+							</div>
+							<a href="#" class="btn">Отправить</a>
 
 
 						</form>
 					</div>
-
+					<div class="div1"><img src="img/фон.png"></div>
 				</div>
 			</section>
 
-			
 	<script type="text/javascript" src="js/parallax.min.js"></script>
+
 </body>
 </html>

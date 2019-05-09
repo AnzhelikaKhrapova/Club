@@ -1,0 +1,5 @@
+
+
+('select').selectize({
+    create: true,
+});
